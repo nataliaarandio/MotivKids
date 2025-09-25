@@ -105,6 +105,6 @@ Navegación: Intents entre Activities
 
 Esta aplicación fue desarrollada como parte de un proyecto académico orientado al bienestar emocional infantil. Todas las pantallas y funcionalidades responden a un diseño pensado para el entorno educativo o familiar.
 
-📱 Descargar APK 👉 [📥 Descargar MotivKids](https://github.com/nataliaarandio/MotivKids/tree/main/APK/MotivKids.apk)
+📱 Descargar APK 👉 [📥 Descargar MotivKids](https://github.com/nataliaarandio/MotivKids/raw/main/APK/MotivKids.apk)
 
 
