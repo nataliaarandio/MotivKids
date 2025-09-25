@@ -1,35 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF8DA"
-    tools:context=".MainActivity">
+    android:id="@+id/main">
 
+    <!-- Logo provisional -->
     <ImageView
-        android:id="@+id/iconCerebro"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/ic_cerebro"
-        android:padding="18dp"
+        android:contentDescription="Logo MotivKids"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="Ícono cerebro"/>
+        android:layout_marginTop="40dp"/>
 
+    <!-- Título -->
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MotivKids"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@id/iconCerebro"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienestar emocional para niños"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Acceso rápido -->
+    <TextView
+        android:id="@+id/fastAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acceso Rápido para Niños"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Ingresa tu PIN -->
+    <TextView
+        android:id="@+id/pinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu PIN"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/fastAccess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Grid con botones numéricos -->
+    <GridLayout
+        android:id="@+id/pinGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/pinLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Botones del 1 al 9 -->
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn1" style="@style/PinButton" android:text="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            style="@style/PinButton"
+            android:layout_height="78dp"
+            android:text="2" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn3" style="@style/PinButton" android:text="3"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn4" style="@style/PinButton" android:text="4"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn5" style="@style/PinButton" android:text="5"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn6" style="@style/PinButton" android:text="6"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn7" style="@style/PinButton" android:text="7"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn8" style="@style/PinButton" android:text="8"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn9" style="@style/PinButton" android:text="9"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button android:id="@+id/btn0" style="@style/PinButton" android:text="0"/>
+        <Button android:id="@+id/btnDel" style="@style/PinButton" android:text="⌫"/>
+    </GridLayout>
+
+    <!-- Botón ingresar -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:backgroundTint="#64D4D4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/pinGrid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
