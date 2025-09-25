@@ -1,11 +1,15 @@
 package com.example.motivkids
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.ImageButton
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class RealizarActivity : AppCompatActivity() {
+
 
     private lateinit var tvMinutes: TextView
     private lateinit var tvSeconds: TextView
@@ -26,6 +30,13 @@ class RealizarActivity : AppCompatActivity() {
 
         // El cronómetro arranca de una vez
         startTimer(startTimeInMillis)
+
+        val btnEnd = findViewById<Button>(R.id.btnFinalizar)
+
+        btnEnd.setOnClickListener {
+            val intent = Intent(this, FeedBackActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun startTimer(timeInMillis: Long) {
@@ -48,4 +59,10 @@ class RealizarActivity : AppCompatActivity() {
         tvMinutes.text = String.format("%02d", minutes)
         tvSeconds.text = String.format("%02d", seconds)
     }
+
+
+
+
 }
+
+

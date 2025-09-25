@@ -23,6 +23,9 @@
         </activity>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".EmotionSelect"/>
+        <activity android:name=".SelectedActivity"/>
+        <activity android:name=".RealizarActivity"/>
+        <activity android:name=".FeedBackActivity"/>
     </application>
 
 </manifest>

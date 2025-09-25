@@ -2,18 +2,19 @@ package com.example.motivkids
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
+import android.widget.Button
 import com.google.android.material.card.MaterialCardView
 
-class MenuActivity : AppCompatActivity() {
+class FeedBackActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_feedback)
 
 
-        val cardEmociones = findViewById<MaterialCardView>(R.id.cardEmociones)
+        val btnEnviar = findViewById<Button>(R.id.btnEnviar)
 
-        cardEmociones.setOnClickListener {
-            val intent = Intent(this, EmotionSelect::class.java)
+        btnEnviar.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
