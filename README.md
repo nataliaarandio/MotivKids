@@ -46,7 +46,7 @@ La aplicación está desarrollada en **Android** utilizando **Kotlin**, siguiend
 
 3. Ejecuta el proyecto en un emulador o dispositivo físico.
 
-📱 Flujo de la Aplicación
+## 📱 Flujo de la Aplicación
 1. 🔢 Pantalla de ingreso con PIN
 
 El usuario debe ingresar un PIN para acceder a la app, pensado para brindar control parental.
@@ -75,7 +75,7 @@ El temporizador guía al niño durante la realización de la actividad.
 
 El niño puede indicar si la actividad lo ayudó a sentirse mejor.
 
-✨ Funcionalidades implementadas
+## ✨ Funcionalidades implementadas
 
 Interfaz amigable con diseño visual basado en emociones.
 
@@ -101,7 +101,7 @@ Recursos visuales: VectorDrawables
 
 Navegación: Intents entre Activities
 
-🧑‍🏫 Proyecto académico
+## 🧑‍🏫 Proyecto académico
 
 Esta aplicación fue desarrollada como parte de un proyecto académico orientado al bienestar emocional infantil. Todas las pantallas y funcionalidades responden a un diseño pensado para el entorno educativo o familiar.
 
