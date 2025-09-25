@@ -1,0 +1,6 @@
+com.example.motivkids.test.app-tracing-1.2.0-0 C:\Users\USUARIO\.gradle\caches\8.11.1\transforms\2e23013910bf342993dda20a6095ea8a\transformed\tracing-1.2.0\res
+com.example.motivkids.test.app-core-1.7.0-1 C:\Users\USUARIO\.gradle\caches\8.11.1\transforms\e28d8db77504e4191a6bce4631c8c3b0\transformed\core-1.7.0\res
+com.example.motivkids.test.app-androidTest-2 C:\uniandes\MotivKids\app\build\generated\res\resValues\androidTest\debug
+com.example.motivkids.test.app-mergeDebugAndroidTestResources-3 C:\uniandes\MotivKids\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.motivkids.test.app-mergeDebugAndroidTestResources-4 C:\uniandes\MotivKids\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.motivkids.test.app-debugAndroidTest-5 C:\uniandes\MotivKids\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
